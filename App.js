@@ -35,7 +35,7 @@ class HomeScreen extends React.Component {
     if (page === "Redeem") {
     }
 
-    if (routeName === "people") {
+    if (routeName === "app") {
       navigate(page, { code: code });
     }
   };
@@ -60,7 +60,7 @@ class RedeemScreen extends React.Component {
       this.props.navigation.state.params.code
     ) {
       // we clicked a redeem link from an ad
-      alert("clicked redeem code");
+      // TODO: add tracking
     }
   }
 
